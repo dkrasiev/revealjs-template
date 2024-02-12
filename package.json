@@ -1,0 +1,23 @@
+{
+  "name": "micro-frontend-presentation",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:gh": "npm run build -- --base /micro-frontend-presentation",
+    "build:gh:publish": "npm run build:gh && npm run publish",
+    "preview": "vite preview",
+    "format": "prettier ./*.{html,js} --write",
+    "publish": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
+    "vite": "^5.1.0"
+  },
+  "dependencies": {
+    "reveal.js": "^5.0.4"
+  }
+}
