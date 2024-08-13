@@ -1,16 +1,14 @@
 {
-  "name": "micro-frontend-presentation",
+  "name": "revealjs-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:gh": "npm run build -- --base /micro-frontend-presentation",
-    "build:gh:publish": "npm run build:gh && npm run publish",
+    "publish": "node ./utils/publish.js",
     "preview": "vite preview",
-    "format": "prettier ./*.{html,js} --write",
-    "publish": "gh-pages -d dist"
+    "format": "prettier ./*.{html,js} --write"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
